@@ -1,6 +1,6 @@
 Yapeng Shi's resume generated via latex.
 
-### Build CV using Docker [latex version]
+### Build CV using Docker and [latex]
 
 ```sh
 docker build -t latex .
@@ -9,7 +9,7 @@ docker run --rm -i -v "$PWD":/data latex pdflatex Yapeng_Resume.tex
 
 ### Preview
 
-![Resume Screenshot](/Yapeng_ Resume.png)
+Yapeng_Resume.png
 
 ### License
 
