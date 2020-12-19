@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-ENV DEBIAN_FRONTEND noninteractive
+MAINTAINER Yapeng-Shi yapengshi66@gmail.com
 
 RUN apt-get update -q && apt-get install -qy \
     curl jq \
