@@ -3,14 +3,7 @@ Yapeng Shi's resume generated via latex.
 ### Build CV using Docker and [latex]
 
 ```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex Yapeng_Resume.tex
+sudo docker build -t latex:full .
+docker run --rm -ti -v "$PWD":/data latex:full pdflatex Yapeng_Resume.tex
+evince Yapeng_Resume.pdf  # view CV
 ```
-
-### Preview
-
-Yapeng_Resume.png
-
-### License
-
-Format is MIT but all the data is owned by Yapeng Shi.
